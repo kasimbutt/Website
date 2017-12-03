@@ -18,8 +18,20 @@ html {
   margin: 0 auto;
 }
 
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 200%;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+/*Header*/
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/fountain.jpg);/* gradient has allowed a darker background for clear text*/
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/fountain.jpg);/* gradient has allowed a darker background for clear text*/
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -33,3 +45,77 @@ header {
   left: 50%;
   transform: translate(-25%, -25%);
 }
+/*Header*/
+
+
+
+/* button css*/
+.btn:link,/*each button will look the same once clicked and visited*/
+.btn:visited {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 300;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #fff;
+  border 1px solid;
+   border: none;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  color: #2980b9;
+
+}
+
+.btn-first:link,
+.btn-first:visited {
+  background-color: #2ecc71;
+  border: 1px solid #fff;
+  margin-right: 15px;
+
+}
+
+.btn-second:link,
+.btn-second:visited {
+  border: 1px solid #fff;
+  background-color: #2ecc71;
+}
+/*end of button css*/
+
+/* nav bar*/
+.nav-bar {
+  float: right;
+  list-style: none;
+  margin-top: 60px;
+  margin-right: 60px;
+  font-weight: bold;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.nav-bar li a:link,
+.nav-bar li a:visited {
+  color:;
+  padding: 8px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.nav-bar li a:hover,
+.nav-bar li a:active {
+  border-bottom: 2px solid #2ecc71;
+}
+/*nav bar*/
