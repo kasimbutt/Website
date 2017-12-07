@@ -1,0 +1,25 @@
+
+
+
+@media only screen and (max-width: 1200px) {
+  .welcome-text-box {
+    width: 100%;
+
+  }
+}
+
+
+/*big tablets*/
+@media only screen and (max-width: 1023px) {
+}
+
+
+
+/*Tablets*/
+@media only screen and (max-width: 767px) {
+}
+
+
+/*Small phones*/
+@media only screen and (max-width: 480px) {
+}
