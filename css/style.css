@@ -247,7 +247,7 @@ header {
 
 /*History section*/
 .history-section {
-  background-color: ;
+  background-color:#e0e0d1 ;
 }
 
 
@@ -282,4 +282,49 @@ header {
   float: left;
   font-size: 150%;
   margin-right: 25px;
+}
+
+/* Eat Section */
+
+.section-eat {
+  background-image:url('images/eat.jpg');
+}
+
+
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.eat-feature {
+  margin-bottom: 5px;
+}
+
+.icon-big {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #3333ff;
+  font-size: 120%;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+a:link,
+a:active {
+  color: #3333ff;
+  text-decoration: none;
+  border-bottom: 1px solid #3333ff;
+  padding-bottom: 1px;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #f44268;
+  border-bottom: 1px solid transparent;
+
 }
