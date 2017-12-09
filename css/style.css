@@ -326,5 +326,46 @@ a:hover,
 a:active {
   color: #f44268;
   border-bottom: 1px solid transparent;
+}
+/*eat section*/
+
+/*comment section*/
+.comments {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/comment-back.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  margin-top: 40px;
+  position: relative;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 10px;
+  display: block;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -3px;
+}
+
+cite img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+
 
 }
