@@ -468,3 +468,101 @@ input [type=checkbox] {
   height: 500px;
   padding: 40px;
 }
+/* end of map and form section*/
+
+/*footer section*/
+footer {
+  background-color: #333;
+  height: 150px;
+  padding: 30px;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+  font-size: 100%;
+}
+
+.social-link {
+  list-style: none;
+  float: right;
+  font-size: 100%;
+}
+
+.footer-nav li,
+.social-link li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.footer-nav li:last-child,
+.social-link li:last-child {
+  margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-link li a:link,
+.social-link li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
+
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.ion-social-snapchat:hover {
+-webkit-transition:  0.2s, color 0.2s;
+  -moz-transition:  0.2s, color 0.2s;
+  transition: 0.2s, color 0.2s;
+  box-shadow: 0 0 0 4px #fff;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -webkit-transform: scale(.8);
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  -moz-transform: scale(.8);
+  -ms-transform: scale(.8);
+  transition: transform 0.2s, opacity 0.2s;
+  transform: scale(.8);
+  opacity: 0;
+}
+
+.ion-social-snapchat {
+  color: #fffc00;
+}
+
+
+.ion-social-twitter {
+  color: #55acee;
+}
+
+.ion-social-facebook {
+  color: #3b5998;
+}
+
+.ion-social-instagram {
+  color:  #e95950;
+}
+
+
+.social-link li a:link,
+.social-link li a:visited {
+  font-size: 200%;
+}
+
+
+
+
+
+                  /*  <div class="col span-1-of-2">
+                      <ul class="social-link">
+                        <div class="cardbox"> </div>
+                          <div class="card">  </div>
+                        <li><a href="#"><i class="ion-social-snapchat"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>*/
