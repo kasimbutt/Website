@@ -6,6 +6,10 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/Grid.css">
   <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="css/queries.css">
+
+
+
 
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900" rel="stylesheet">
@@ -17,26 +21,48 @@
   <body>
 
   <header>
+
+
     <nav>
 
-      <ul class="nav-bar">
-        <li><a href="#">visit leicester</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Comments</a></li>
-          <li><a href="#">Map</a></li>
+<section id="welcome">
+      <ul class="navbar">
+        <li><a href="#visit-leicester">visit leicester</a></li>
+        <li><a href="#History">History</a></li>
+        <li><a href="#Comments">Comments</a></li>
+        <li><a href="#map">Map</a></li>
         </ul>
+        <a class="mobile-nav-icon"><i class="ion-navicon-round"></i></a>
+
     </nav>
+</section>
+
 
 
   <div class="welcome-text-box">
     <h1>Welcome To Leicestershire</h1>
-    <a class="btn btn-first" href="#">Enter</a>
-    <a class="btn btn-second" href="#">Show me More</a>
+    <canvas id="canvas" width="350" height="350"></canvas>
+    <div class="box">
+  <div class="clock">
+    <span class="hours"></span>
+    <span class="minutes"></span>
+  </div>
+  <div class="date">
+    <div id="daymonth"></div>
+    <div id="year"></div>
+  </div>
+</div>
+    <a class="btn btn-first" href="#gallery">Gallery</a>
+    <a class="btn btn-second" href="#activities">Activities</a>
   </div>
   </header>
 
 
-  <section class="visit-leicester">
+
+  <main>
+
+
+  <section class="visit-leicester" id="visit-leicester">
   <div class="row">
       <h2>Why Visit Leicester?</h2>
       <p class="visit-text">
@@ -80,10 +106,13 @@
     </p>
   </div>
   </div>
-
   </section>
 
-  <section class="leicester-pic">
+
+
+
+
+  <section class="leicester-pic" id="gallery">
     <ul class="leicester-gallery">
       <li>
         <figure class="leicester-photo">
@@ -145,13 +174,17 @@
     </ul>
   </section>
 
-  <section class="history-section">
+
+
+  <section class="history-section" id="History">
     <div class="row">
-      <h2>History - Fun Facts</h2>
+      <h2 id="history">History - Fun Facts</h2>
     </div>
     <div class="row">
       <div class="col span-1-of-2 history-box">
+
         <img src="images/history.jpg" alt="Old Picture of Clock tower in leicester" class="history-pic" style="width:100;">
+
   </div>
 
   <div class="col span-1-of-2 history-box">
@@ -173,6 +206,7 @@
   </div>
   </div>
   </section>
+
 
   <section class="section-eat">
     <div class="row">
@@ -255,7 +289,8 @@
                         </div>
                   </section>
 
-                  <section class="comments">
+
+                  <section class="comments" id="Comments">
                     <div class="row">
                       <h2>Comments on Leicestershire</h2>
                     </div>
@@ -287,7 +322,8 @@
                   </div>
                 </section>
 
-                <section class="activities">
+
+                <section class="activities" id="activities">
                   <div class="row">
                     <h2>Activities</h2>
                   </div>
@@ -366,6 +402,7 @@
                 </section>
 
 
+
               <div class="map-box">
                   <div id="map"></div>
                   <div class="form-box">
@@ -437,24 +474,30 @@
                                         </div>
 
 
+
                                         <script async defer
                                             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCZJTYown_COCVBHzvT8TYQOHVn7rVeV8&callback=initMap">
                                             </script>
 
                                             <script src="javascript/map.js"></script>
+                                            <script src="javascript/clock.js"></script>
+                                            <script src="javascript/date.js"></script>
+
 
                     </form>
                   </div>
                 </div>
+</main>
+
 
                 <footer>
                   <div class="row">
                     <div class="col span-1-of-2">
                       <ul class="footer-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Leicester</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Comments</a></li>
+                        <li><a href="#welcome">Home</a></li>
+                        <li><a href="#visit-leicester">Leicester</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#Comments">Comments</a></li>
                       </ul>
 
                     </div>

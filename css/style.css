@@ -14,9 +14,42 @@ html {
 }
 
 
+main {
+  display: block;
+  height: 1000px;
+  overflow-y:hidden;
+  scroll-behavior:smooth;
+}
 
+#canvas {
+    opacity: 1;
+    height: 220px;
+    margin-left:-150px;
+    margin-top: -330px;
+    float: left;
 
+}
 
+.box {
+  border-radius:5px;
+  display:inline-block;
+  margin:6em 0 2em;
+  padding:0 20px 20px;
+  float: left;
+  margin-left: 50px;
+  margin-top: -310px;
+
+}
+
+.date #daymonth {
+  color:#A10691  ;
+  font-size:2.5em;
+  padding:10px 0;
+}
+.date #year {
+  color:#A10691  ;
+  font-size:2.5em;
+}
 
 
 
@@ -28,8 +61,6 @@ html {
   height: auto;
   float: left;
 }*/
-
-
 
 
 
@@ -47,7 +78,17 @@ html {
   padding: 1%;
 }
 /*Reuse*/
-
+.top {
+  display: block;
+  text-align: right;
+  line-height: 1.75em;
+  padding-right: 0.5em;
+  margin-bottom: 20px;
+}
+.top:hover {
+  background: rgba(200,200,200,0.96);
+  color: #fff;
+}
 /*Headings*/
 h1,
 h2,
@@ -112,7 +153,13 @@ h3 {
   display: block;
   color: #3333ff;
   margin-bottom: 10px;
+}
 
+.nav-icon {
+  font-size: 400%;
+  display: block;
+  color: #3333ff;
+  margin-bottom: 10px;
 }
 
 
@@ -180,21 +227,45 @@ input[type=submit] {
 /*end of button css*/
 
 /* nav bar*/
-.nav-bar {
+.navbar {
   float: right;
   list-style: none;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-right: 60px;
   font-weight: bold;
 }
 
-.nav-bar li {
+.top {
+  display: block;
+  text-align: right;
+  line-height: 1.75em;
+  padding-right: 0.5em;
+}
+.top:hover {
+  background: rgba(200,200,200,0.96);
+  color: #fff;
+}
+
+/*mobile nav*/
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+
+}
+
+/*sticky*/
+
+
+
+
+.navbar li {
   display: inline-block;
   margin-left: 35px;
 }
 
-.nav-bar li a:link,
-.nav-bar li a:visited {
+.navbar li a:link,
+.navbar li a:visited {
 
   padding: 8px 0;
   text-decoration: none;
@@ -204,8 +275,8 @@ input[type=submit] {
   transition: border-bottom 0.2s;
 }
 
-.nav-bar li a:hover,
-.nav-bar li a:active {
+.navbar li a:hover,
+.navbar li a:active {
   border-bottom: 2px solid #2ecc71;
 }
 /*nav bar*/
@@ -248,9 +319,12 @@ input[type=submit] {
 }
 
 
+/*end of gallery section*/
+
+
 /*History section*/
 .history-section {
-  background-color:#e0e0d1 ;
+  background-color:#e0e0d1;
 }
 
 
@@ -269,8 +343,10 @@ input[type=submit] {
   width: 80%;
 }
 
+
 .history-title  {
   margin-bottom: 50px;
+
 }
 
 .history-title section {
@@ -338,6 +414,7 @@ a:active {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 100%;
   color: white;
   background-attachment: fixed;
 }
@@ -487,6 +564,9 @@ footer {
   list-style: none;
   float: right;
   font-size: 100%;
+  margin-right:-95%;
+  margin-top: -8%;
+
 }
 
 .footer-nav li,
@@ -508,7 +588,6 @@ footer {
   border: 0;
   color: #888;
   transition: color 0.2s;
-
 }
 
 .footer-nav li a:hover,
@@ -516,25 +595,9 @@ footer {
   color: #ddd;
 }
 
-.ion-social-snapchat:hover {
--webkit-transition:  0.2s, color 0.2s;
-  -moz-transition:  0.2s, color 0.2s;
-  transition: 0.2s, color 0.2s;
-  box-shadow: 0 0 0 4px #fff;
-  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-  -webkit-transform: scale(.8);
-  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-  -moz-transform: scale(.8);
-  -ms-transform: scale(.8);
-  transition: transform 0.2s, opacity 0.2s;
-  transform: scale(.8);
-  opacity: 0;
-}
-
 .ion-social-snapchat {
   color: #fffc00;
 }
-
 
 .ion-social-twitter {
   color: #55acee;
@@ -553,16 +616,3 @@ footer {
 .social-link li a:visited {
   font-size: 200%;
 }
-
-
-
-
-
-                  /*  <div class="col span-1-of-2">
-                      <ul class="social-link">
-                        <div class="cardbox"> </div>
-                          <div class="card">  </div>
-                        <li><a href="#"><i class="ion-social-snapchat"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>*/
