@@ -17,7 +17,7 @@ html {
 main {
   display: block;
   height: 1000px;
-  overflow-y:hidden;
+  overflow-y:scroll;
   scroll-behavior:smooth;
 }
 
@@ -92,7 +92,8 @@ main {
 /*Headings*/
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 300;
   text-transform: uppercase;
 
@@ -165,10 +166,11 @@ h3 {
 
 /*Header*/
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/fountain.jpg);/* gradient has allowed a darker background for clear text*/
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/fountain.jpg);/* gradient has allowed a lighter background for clear text*/
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 100%;
 }
 
 .welcome-text-box {
@@ -178,6 +180,7 @@ header {
   top: 45%;
   left: 30%;
   transform: translate(-25%, -25%);
+  width: 100%;
 }
 /*Header*/
 
@@ -245,16 +248,6 @@ input[type=submit] {
   background: rgba(200,200,200,0.96);
   color: #fff;
 }
-
-/*mobile nav*/
-.mobile-nav-icon {
-  float: right;
-  margin-top: 30px;
-  cursor: pointer;
-
-}
-
-/*sticky*/
 
 
 
@@ -367,18 +360,46 @@ input[type=submit] {
 
 .section-eat {
   background-image:url('images/eat.jpg');
+  width: 100%;
+  background-color: #E3E1E0;
+}
+
+.img1 {
+  margin-left: 90px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.img2 {
+  margin-left: 90px;
+  padding-top: 20px;
+}
+
+.img3 {
+  margin-left: 90px;
+  padding-top: 20px;
+}
+
+.img4 {
+  margin-left: 90px;
+  padding-top: 20px;
 }
 
 
+h4 {
+  margin-left: 100px;
+}
 
 .box img {
   width: 100%;
   height: auto;
   margin-bottom: 15px;
+
 }
 
 .eat-feature {
   margin-bottom: 5px;
+
 }
 
 .icon-big {
@@ -390,6 +411,7 @@ input[type=submit] {
   line-height: 120%;
   vertical-align: middle;
   margin-right: 10px;
+  margin-left: 90px;
 }
 
 a:link,
@@ -409,14 +431,14 @@ a:active {
 /*eat section*/
 
 /*comment section*/
-.comments {
+.Comments {
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/comment-back.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100%;
   color: white;
-  background-attachment: fixed;
+
 }
 
 blockquote {
@@ -452,19 +474,18 @@ cite img {
 /*Activities section*/
 .activities {
   background-color:#f4f4f4;
-
 }
 
 .plan-box {
-  background-color: #fcfcfc;
+  background-color: #E7EEF7;
   border-radius: 5px;
   width: 90%;
-  margin-left: 23%;
+  margin-left: 10%;
   box-shadow: 0 2px 2px #e3e3e3;
 }
 
 .plan-box div:first-child {
-  background-color: #fcfcfc;
+  background-color: #E7eef7;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -500,7 +521,7 @@ cite img {
 
 /*map and form section*/
 .map-form {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -552,32 +573,36 @@ footer {
   background-color: #333;
   height: 150px;
   padding: 30px;
+  width: 100%;
 }
 
 .footer-nav {
   list-style: none;
   float: left;
   font-size: 100%;
+  width: 100%;
 }
 
 .social-link {
   list-style: none;
   float: right;
   font-size: 100%;
-  margin-right:-95%;
-  margin-top: -8%;
+  margin-right:5%;
+  margin-top: 5%;
+  width: 100%;
 
 }
 
 .footer-nav li,
 .social-link li {
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 50px;
 }
 
 .footer-nav li:last-child,
 .social-link li:last-child {
   margin: 0;
+  margin-right: 50px;
 }
 
 .footer-nav li a:link,
