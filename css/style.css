@@ -17,7 +17,7 @@ html {
 main {
   display: block;
   height: 1000px;
-  overflow-y:scroll;
+  overflow-y:hidden;
   scroll-behavior:smooth;
 }
 
@@ -93,11 +93,13 @@ main {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h6
+ {
   font-weight: 300;
   text-transform: uppercase;
-
 }
+
 
 
 
@@ -373,11 +375,13 @@ input[type=submit] {
 .img2 {
   margin-left: 90px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .img3 {
   margin-left: 90px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .img4 {
@@ -394,12 +398,10 @@ h4 {
   width: 100%;
   height: auto;
   margin-bottom: 15px;
-
 }
 
 .eat-feature {
   margin-bottom: 5px;
-
 }
 
 .icon-big {
@@ -413,6 +415,21 @@ h4 {
   margin-right: 10px;
   margin-left: 90px;
 }
+
+.icon-big1 {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #3333ff;
+  font-size: 120%;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 90px;
+  text-decoration: none;
+}
+
+
 
 a:link,
 a:active {
@@ -428,6 +445,9 @@ a:active {
   color: #f44268;
   border-bottom: 1px solid transparent;
 }
+
+
+
 /*eat section*/
 
 /*comment section*/
@@ -472,6 +492,16 @@ cite img {
 /*end of comment section*/
 
 /*Activities section*/
+
+h6 {
+  font-size: 200%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+
+}
+
 .activities {
   background-color:#f4f4f4;
 }

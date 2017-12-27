@@ -1,34 +1,102 @@
-
-@media only screen and (min-width: 500px) {
-  header {
-    width: 100%;
+@media screen and (min-width: 500px ) {
+  /*eat section media queries*/
+  .img1 {
+    margin-left: 10px;
   }
-  .visit-text {
-    line-height: 95%;
-    width: 100%;
+  h4 {
+    margin-left: 30px;
   }
-
-  .box p {
-    font-size: 90%;
-    line-height: 95%;
-    width: 100%;
-  }
-  .welcome-text-box {
-    position: absolute;
-    color: blue;
-    width: 1140px;
-    top: 45%;
-    left: 30%;
-    transform: translate(-25%, -25%);
-    width: 100%;
+  .icon-big {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #3333ff;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-left: 15px;
   }
 
+  .img2 {
+    margin-left: 35px;
+    margin-top: -10px;
+  }
+  .img3 {
+    margin-left: 70px;
+    margin-top: -10px;
+  }
+  .img4 {
+    width: 100%;
+    margin-left: 80px;
+    display: none;
+  }
+  .kayal {
+    display: none;
+  }
+  .fam {
+    display: none;
+  }
+  .star {
+    display: none;
+  }
+  .icon-big1 {
+    display: none;
+  }
+  .website {
+    display: none;
+  }
+  /*activities section media queries*/
+   h6 {
+     text-align: center;
+     margin-right: 110px;
+
+     font-size: 200%;
+     word-spacing: 2px;
+     text-align: center;
+   }
+
+  /*footer media queries*/
+  .social-link {
+    list-style: none;
+    float: right;
+    font-size: 100%;
+    margin-right:-350px;
+    margin-top: -50px;
+    width: 100%0
+  }
 }
 
-@media only screen and (min-width: 1200px) {
-  .box img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+@media screen and (min-width: 1200px ) {
+  .social-link {
+    list-style: none;
+    float: right;
+    font-size: 100%;
+    margin-right:-900px;
+    margin-bottom: 100px;
+    width: 100%0
   }
+  .img1 {
+    margin-left: 10px;
+  }
+  .img2 {
+    margin-left: 45px;
+    margin-top: -10px;
+  }
+  .img3 {
+    margin-left: 45px;
+    margin-top: -10px;
+  }
+  h4 {
+    margin-left: 30px;
+  }
+  h6 {
+    text-align: center;
+    margin-right: 209px;
+    font-size: 200%;
+    word-spacing: 2px;
+    text-align: center;
+  }
+
+
+
 }
