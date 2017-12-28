@@ -17,18 +17,34 @@ html {
 main {
   display: block;
   height: 1000px;
-  overflow-y:hidden;
-  scroll-behavior:smooth;
+  /*overflow-y:visible;*/
+  /*scroll-behavior:smooth;*/
 }
 
 #canvas {
     opacity: 1;
-    height: 220px;
-    margin-left:-150px;
-    margin-top: -330px;
+    height: 180px;
+    margin-left:10px;
+    margin-top: -290px;
     float: left;
+}
+
+.date #daymonth {
+  color:#454545;
+  font-size:2em;
+  padding:10px 0;
+  margin-left: 170px;
+  margin-top: 30px;
 
 }
+.date #year {
+  color:#C1C1C1;
+  font-size:1.8em;
+  margin-left: 170px;
+  margin-top: -20px;
+}
+
+
 
 .box {
   border-radius:5px;
@@ -451,15 +467,7 @@ a:active {
 /*eat section*/
 
 /*comment section*/
-.Comments {
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/comment-back.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  color: white;
 
-}
 
 blockquote {
   padding: 2%;
@@ -594,7 +602,6 @@ input [type=checkbox] {
   background-color: #fff;
   z-index: 10;
   height: 500px;
-  padding: 40px;
 }
 /* end of map and form section*/
 
@@ -602,7 +609,6 @@ input [type=checkbox] {
 footer {
   background-color: #333;
   height: 150px;
-  padding: 30px;
   width: 100%;
 }
 
@@ -617,7 +623,7 @@ footer {
   list-style: none;
   float: right;
   font-size: 100%;
-  margin-right:5%;
+  margin-right:-5%;
   margin-top: 5%;
   width: 100%;
 
