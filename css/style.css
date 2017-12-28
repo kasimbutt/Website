@@ -6,7 +6,7 @@
 
 body::-webkit-scrollbar
 {
-	width: 0.7em;
+	width: 1em;
 	background-color: #EEE;
 }
 
@@ -15,7 +15,7 @@ body::-webkit-scrollbar-thumb{
 	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 /* 	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
 /*   background: linear-gradient(to top, #2193b0, #6dd5ed);  */
-	border-radius:1em;
+	border-radius:2em;
 }
 
 html {
@@ -392,7 +392,7 @@ input[type=submit] {
 
 .section-eat {
   width: 100%;
-  background-color: #E3E1E0;
+  /*background-color: #E3E1E0;*/
 }
 
 .img1 {
@@ -630,6 +630,7 @@ footer {
   float: left;
   font-size: 100%;
   width: 100%;
+
 }
 
 .social-link {
@@ -662,6 +663,8 @@ footer {
   border: 0;
   color: #888;
   transition: color 0.2s;
+  overflow-y:scroll;
+  scroll-behavior:smooth;
 }
 
 .footer-nav li a:hover,
