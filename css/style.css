@@ -377,7 +377,6 @@ input[type=submit] {
 /* Eat Section */
 
 .section-eat {
-  background-image:url('images/eat.jpg');
   width: 100%;
   background-color: #E3E1E0;
 }
