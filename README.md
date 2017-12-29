@@ -20,7 +20,7 @@ My Website will be based on the city of Leicester. The Website has been created 
 - JavaScript used to add scroll, map and clock.
 
 ##### Navigational Structure 
-
+navgiation
 
 
 
