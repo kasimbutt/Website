@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px ) {
+@media screen and (min-width: 500px) {
   /*eat section media queries*/
   .img1 {
     margin-left: 10px;
@@ -16,7 +16,6 @@
     vertical-align: middle;
     margin-left: 15px;
   }
-
   .img2 {
     margin-left: 35px;
     margin-top: -10px;
@@ -46,32 +45,30 @@
     display: none;
   }
   /*activities section media queries*/
-   h6 {
-     text-align: center;
-     margin-right: 110px;
-
-     font-size: 200%;
-     word-spacing: 2px;
-     text-align: center;
-   }
-
+  h6 {
+    text-align: center;
+    margin-right: 110px;
+    font-size: 200%;
+    word-spacing: 2px;
+    text-align: center;
+  }
   /*footer media queries*/
   .social-link {
     list-style: none;
     float: right;
     font-size: 100%;
-    margin-right:-350px;
+    margin-right: -350px;
     margin-top: -50px;
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1200px ) {
+@media screen and (min-width: 1200px) {
   .social-link {
     list-style: none;
     float: right;
     font-size: 100%;
-    margin-right:-900px;
+    margin-right: -900px;
     margin-bottom: 100px;
     width: 100%;
   }
@@ -97,7 +94,7 @@
     text-align: center;
   }
   .comments {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/cimage.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/cimage.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -119,11 +116,10 @@
     content: " ";
     width: 300px;
     margin: 0 auto;
-    margin-top:10px;
+    margin-top: 10px;
   }
   header {
-
-  /*background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/fountain.jpg);/* gradient has allowed a lighter background for clear text*/
+    /*background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/fountain.jpg);/* gradient has allowed a lighter background for clear text*/
     background-size: cover;
     background-position: center;
     height: 100vh;

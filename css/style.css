@@ -4,18 +4,17 @@
   box-sizing: border-box;
 }
 
-body::-webkit-scrollbar
-{
-	width: 1em;
-	background-color: #EEE;
+body::-webkit-scrollbar {
+  width: 1em;
+  /*used for width of scrollbar*/
+  background-color: #EEE;
+  /*Add some colour to scrollbar*/
 }
 
-body::-webkit-scrollbar-thumb{
-/* 	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
-	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-/* 	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
-/*   background: linear-gradient(to top, #2193b0, #6dd5ed);  */
-	border-radius:2em;
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  border-radius: 2em;
+  /*creates round shape of scrollbar*/
 }
 
 html {
@@ -24,90 +23,73 @@ html {
   font-size: 20px;
   font-weight: 300;
   font-family: 'Lato', 'sans-serif';
-  overflow-x: hidden;/*this stops the scrolling*/
+  overflow-x: hidden;
+  /*this stops the scrolling from the bottom of webpage*/
+  ;
 }
-
 
 main {
   display: block;
   height: 1000px;
-  /*overflow-y:visible;*/
-  /*scroll-behavior:smooth;*/
 }
 
 #canvas {
-    opacity: 1;
-    height: 180px;
-    margin-left:10px;
-    margin-top: -290px;
-    float: left;
+  opacity: 1;
+  height: 180px;
+  margin-left: 10px;
+  margin-top: -290px;
+  float: left;
 }
 
 .date #daymonth {
-  color:#454545;
-  font-size:2em;
-  padding:10px 0;
+  color: #454545;
+  font-size: 2em;
+  padding: 10px 0;
   margin-left: 170px;
   margin-top: 30px;
-
 }
+
 .date #year {
-  color:#C1C1C1;
-  font-size:1.8em;
+  color: #C1C1C1;
+  font-size: 1.8em;
   margin-left: 170px;
   margin-top: -20px;
 }
 
-
-
 .box {
-  border-radius:5px;
-  display:inline-block;
-  margin:6em 0 2em;
-  padding:0 20px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 6em 0 2em;
+  padding: 0 20px 20px;
   float: left;
   margin-left: 50px;
   margin-top: -310px;
-
 }
 
 .date #daymonth {
-  color:#A10691  ;
-  font-size:2.5em;
-  padding:10px 0;
+  color: #A10691;
+  font-size: 2.5em;
+  padding: 10px 0;
 }
+
 .date #year {
-  color:#A10691  ;
-  font-size:2.5em;
+  color: #A10691;
+  font-size: 2.5em;
 }
-
-
-
-
-
-
-/*.logo {
-  width: 100%;
-  height: auto;
-  float: left;
-}*/
-
-
 
 /*Reuse*/
+
 .row {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-/*section {
-  padding: 10px 0;
-}*/
-
 .box {
   padding: 1%;
 }
+
 /*Reuse*/
+
 .top {
   display: block;
   text-align: right;
@@ -115,23 +97,19 @@ main {
   padding-right: 0.5em;
   margin-bottom: 20px;
 }
+
 .top:hover {
-  background: rgba(200,200,200,0.96);
+  background: rgba(200, 200, 200, 0.96);
   color: #fff;
 }
+
 /*Headings*/
-h1,
-h2,
-h3,
-h4,
-h6
- {
+
+h1, h2, h3, h4, h6 {
+  /*Having all headings same css keeps consistency*/
   font-weight: 300;
   text-transform: uppercase;
 }
-
-
-
 
 h1 {
   margin: 0;
@@ -159,16 +137,18 @@ h2:after {
   content: " ";
   width: 300px;
   margin: 0 auto;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 h3 {
   font-size: 100%;
   margin-bottom: 15px;
 }
+
 /*Headings*/
 
 /*Paragraph text */
+
 .visit-text {
   line-height: 95%;
   width: 100%;
@@ -178,9 +158,11 @@ h3 {
   font-size: 90%;
   line-height: 95%;
 }
+
 /*Paragraph text */
 
 /*Icons*/
+
 .icon-color {
   font-size: 400%;
   display: block;
@@ -195,10 +177,11 @@ h3 {
   margin-bottom: 10px;
 }
 
-
 /*Header*/
+
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/fountain.jpg);/* gradient has allowed a lighter background for clear text*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/fountain.jpg);
+  /* gradient has allowed a lighter background for clear text*/
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -214,14 +197,15 @@ header {
   transform: translate(-25%, -25%);
   width: 100%;
 }
+
 /*Header*/
 
-
-
 /* button css*/
-.btn:link,/*each button will look the same once clicked and visited*/
-.btn:visited,
-input[type=submit] {
+
+.btn:link,
+/*each button will look the same once clicked and visited*/
+
+.btn:visited, input[type=submit] {
   display: inline-block;
   padding: 10px 20px;
   font-weight: 300;
@@ -229,39 +213,33 @@ input[type=submit] {
   text-decoration: none;
   border-radius: 200px;
   color: #fff;
-
-   border: none;
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   margin: 4px 2px;
-   cursor: pointer;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-.btn:hover,
-.btn:active,
-input[type=submit] {
+.btn:hover, .btn:active, input[type=submit] {
   color: #2980b9;
-
 }
 
-.btn-first:link,
-.btn-first:visited,
-input[type=submit] {
+.btn-first:link, .btn-first:visited, input[type=submit] {
   background-color: #9932CC;
   border: 1px solid #fff;
   margin-right: 15px;
-
 }
 
-.btn-second:link,
-.btn-second:visited {
+.btn-second:link, .btn-second:visited {
   border: 1px solid #fff;
   background-color: #9932CC;
 }
+
 /*end of button css*/
 
 /* nav bar*/
+
 .navbar {
   float: right;
   list-style: none;
@@ -276,22 +254,18 @@ input[type=submit] {
   line-height: 1.75em;
   padding-right: 0.5em;
 }
+
 .top:hover {
-  background: rgba(200,200,200,0.96);
+  background: rgba(200, 200, 200, 0.96);
   color: #fff;
 }
-
-
-
 
 .navbar li {
   display: inline-block;
   margin-left: 35px;
 }
 
-.navbar li a:link,
-.navbar li a:visited {
-
+.navbar li a:link, .navbar li a:visited {
   padding: 8px 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -300,18 +274,18 @@ input[type=submit] {
   transition: border-bottom 0.2s;
 }
 
-.navbar li a:hover,
-.navbar li a:active {
+.navbar li a:hover, .navbar li a:active {
   border-bottom: 2px solid #2ecc71;
 }
-/*nav bar*/
+
+/*end of nav bar*/
 
 .visit-leicester {
   background-color: #e0e0d1;
 }
 
-
 /*Gallery*/
+
 .leicester-gallery {
   list-style: none;
   width: 100%;
@@ -335,23 +309,23 @@ input[type=submit] {
   width: 100%;
   height: auto;
   transform: scale(1.15);
+  /*set the images in section to a darker shade*/
   transition: transform 0.5s, opacity 0.5s;
 }
 
 .leicester-photo img:hover {
   transform: scale(1.03);
+  /*The hover effect makes the image more light when hover over image*/
   opacity: 1;
 }
 
-
 /*end of gallery section*/
 
-
 /*History section*/
-.history-section {
-  background-color:#e0e0d1;
-}
 
+.history-section {
+  background-color: #e0e0d1;
+}
 
 .history-box first-child {
   text-align: right;
@@ -368,10 +342,8 @@ input[type=submit] {
   width: 80%;
 }
 
-
-.history-title  {
+.history-title {
   margin-bottom: 50px;
-
 }
 
 .history-title section {
@@ -388,11 +360,12 @@ input[type=submit] {
   margin-right: 25px;
 }
 
+/*end of history section*/
+
 /* Eat Section */
 
 .section-eat {
   width: 100%;
-  /*background-color: #E3E1E0;*/
 }
 
 .img1 {
@@ -417,7 +390,6 @@ input[type=submit] {
   margin-left: 90px;
   padding-top: 20px;
 }
-
 
 h4 {
   margin-left: 100px;
@@ -458,10 +430,7 @@ h4 {
   text-decoration: none;
 }
 
-
-
-a:link,
-a:active {
+a:link, a:active {
   color: #3333ff;
   text-decoration: none;
   border-bottom: 1px solid #3333ff;
@@ -469,18 +438,14 @@ a:active {
   transition: border-bottom 0.2s, color 0.2s;
 }
 
-a:hover,
-a:active {
+a:hover, a:active {
   color: #f44268;
   border-bottom: 1px solid transparent;
 }
 
-
-
-/*eat section*/
+/*end of eat section*/
 
 /*comment section*/
-
 
 blockquote {
   padding: 2%;
@@ -510,6 +475,7 @@ cite img {
   border-radius: 50%;
   margin-right: 10px;
 }
+
 /*end of comment section*/
 
 /*Activities section*/
@@ -520,11 +486,10 @@ h6 {
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: 1px;
-
 }
 
 .activities {
-  background-color:#f4f4f4;
+  background-color: #f4f4f4;
 }
 
 .plan-box {
@@ -567,18 +532,17 @@ h6 {
   list-style: none;
   padding: 5px 0;
 }
+
 /*end of activites section*/
 
-
 /*map and form section*/
+
 .map-form {
   width: 100%;
   margin: 0 auto;
 }
 
-input[type=text],
-select[type=email],
-textarea {
+input[type=text], select[type=email], textarea {
   width: 100%;
   padding: 7px;
   border-radius: 3px;
@@ -604,7 +568,6 @@ input [type=checkbox] {
   width: 100%;
   height: 500px;
   position: relative;
-
 }
 
 .form-box {
@@ -616,9 +579,11 @@ input [type=checkbox] {
   z-index: 10;
   height: 500px;
 }
+
 /* end of map and form section*/
 
 /*footer section*/
+
 footer {
   background-color: #333;
   height: 150px;
@@ -630,44 +595,36 @@ footer {
   float: left;
   font-size: 100%;
   width: 100%;
-
 }
 
 .social-link {
   list-style: none;
   float: right;
   font-size: 100%;
-  margin-right:-5%;
+  margin-right: -5%;
   margin-top: 5%;
   width: 100%;
-
 }
 
-.footer-nav li,
-.social-link li {
+.footer-nav li, .social-link li {
   display: inline-block;
   margin-right: 50px;
 }
 
-.footer-nav li:last-child,
-.social-link li:last-child {
+.footer-nav li:last-child, .social-link li:last-child {
   margin: 0;
   margin-right: 50px;
 }
 
-.footer-nav li a:link,
-.footer-nav li a:visited,
-.social-link li a:link,
-.social-link li a:visited {
+.footer-nav li a:link, .footer-nav li a:visited, .social-link li a:link, .social-link li a:visited {
   text-decoration: none;
   border: 0;
   color: #888;
   transition: color 0.2s;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
-.footer-nav li a:hover,
-.footer-nav li a:active {
+.footer-nav li a:hover, .footer-nav li a:active {
   color: #ddd;
 }
 
@@ -684,11 +641,11 @@ footer {
 }
 
 .ion-social-instagram {
-  color:  #e95950;
+  color: #e95950;
 }
 
-
-.social-link li a:link,
-.social-link li a:visited {
+.social-link li a:link, .social-link li a:visited {
   font-size: 200%;
 }
+
+/*end of footer section*/
