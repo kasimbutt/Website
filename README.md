@@ -20,7 +20,20 @@ My Website will be based on the city of Leicester. The Website has been created 
 - JavaScript used to add scroll, map and clock.
 
 ##### Navigational Structure 
-navgiation
+![](sketches/navigation.jpg)
+
+###### References 
+https://www.w3schools.com/html/html_responsive.asp
+https://www.w3schools.com/w3css/w3css_grid.asp
+https://www.w3schools.com/w3css/w3css_quotes.asp
+http://ionicons.com/
+http://htmlcolorcodes.com/
+https://developers.google.com/maps/documentation/javascript/get-api-key
+https://realfavicongenerator.net/
+https://fonts.google.com/
+https://www.w3schools.com/howto/howto_css_image_overlay.asp
+https://www.w3schools.com/howto/howto_css_contact_form.asp
+
 
 
 
