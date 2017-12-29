@@ -664,7 +664,6 @@ footer {
   color: #888;
   transition: color 0.2s;
   overflow-y:scroll;
-  scroll-behavior:smooth;
 }
 
 .footer-nav li a:hover,
