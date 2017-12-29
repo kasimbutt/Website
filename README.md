@@ -22,7 +22,10 @@ My Website will be based on the city of Leicester. The Website has been created 
 ##### Navigational Structure 
 ![](sketches/navigation.jpg)
 
-###### References 
+###### SideNote
+There seems to be an error with the ionicons.css folder for my icons, i am not sure to why this is but all other css is fully validated. 
+
+##### References 
 https://www.w3schools.com/html/html_responsive.asp
 https://www.w3schools.com/w3css/w3css_grid.asp
 https://www.w3schools.com/w3css/w3css_quotes.asp
